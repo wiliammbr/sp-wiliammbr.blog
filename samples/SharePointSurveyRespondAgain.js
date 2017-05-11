@@ -31,7 +31,7 @@ function readSurveyVotes(cbSurveyResult) {
                     <Where> \
                         <Eq> \
                             <FieldRef Name="Author"/> \
-                            <Value Type="Integer"><UserID Type="Integer"/></Value> \
+                            <Value Type="Integer">' + _spPageContextInfo.userId + '</Value> \
                         </Eq> \
                     </Where> \
                    </View>';
